@@ -57,10 +57,6 @@ describe("<App />", () => {
       expect(wrapper.state().currentAuthor).toBe(null);
     });
 
-    it("shows the AuthorList component", () => {
-      expect(wrapper.find("AuthorList").exists()).toBe(true);
-    });
-
     it("DOESN'T show the AuthorDetail component", () => {
       expect(wrapper.find("AuthorDetail").exists()).toBe(false);
     });
